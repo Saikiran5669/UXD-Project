@@ -1,0 +1,26 @@
+<!-- author: lohitha bhethalam -->
+<br/>
+<br/>
+<h2>Confirm deletion of player</h2>
+<br/>
+<br/> ID:
+<%=  player._id %>
+  
+    <br/>name:
+    <%=player.name%>
+      <br/> email:
+      <%=player.email%>
+      <br/> phone:
+      <%=player.phone%>
+        <br/>
+       
+           
+
+            <form method="get" action="/player">
+              <input type="submit" value="Return to list" class="btn btn-caution" />
+            </form>
+
+            <br/>
+            <form method="POST" action="/player/delete/<%= player._id %>">
+              <input type="submit" value="Delete this item" class="btn btn-danger pull-right" />
+            </form>

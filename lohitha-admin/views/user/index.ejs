@@ -1,0 +1,47 @@
+<br>
+<h1>User</h1>
+<div style="height:1200px;width:400px;border:1px solid #ccc;overflow:auto;">
+  <br/>
+
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <a href="user/create" class="btn btn-primary new">Add User</a>
+      <!-- <h3 href="user/create" class="btn btn-primary new">
+        Add User
+      </h3> -->
+      <h2>Recent user entries</h2>
+      <p>There are
+        <%= users.query.length %> users.
+          <br/>
+      </p>
+      <% for (var i = users.query.length-1; i >= 0; i--) {   
+        user = users.query[i];   %>
+        <div class="panel panel-default">
+          <div class="panel-heading"></div>
+          <div class="text-muted pull-right"></div>
+          <div class="panel-body">
+            <br/> ID:
+            <%=  user._id %>
+              
+                <br/>name:
+                <%=user.name%>
+                  <br/> email:
+                  <%=user.email%>
+                  <br/> phone:
+                  <%=user.phone%>
+                    <br/>
+                       
+                        <br/>
+                        <br/>
+                        <a href="/user/delete/<%= user._id  %>" class="btn btn-danger"> Delete </a>
+                        <a href="/user/details/<%= user._id %>" class="btn btn-info"> Details </a>
+                        <a href="/user/edit/<%= user._id %>" class="btn btn-warning"> Edit </a>
+        </div>
+      </div>
+        <% } %>
+
+    </div>
+  </div>
+</div>
+  </div>

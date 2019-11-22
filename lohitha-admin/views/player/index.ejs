@@ -1,0 +1,47 @@
+<br>
+<h1>Player</h1>
+<div style="height:1200px;width:400px;border:1px solid #ccc;overflow:auto;">
+  <br/>
+
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <a href="player/create" class="btn btn-primary new">Add Player</a>
+      <!-- <h3 href="player/create" class="btn btn-primary new">
+        Add player
+      </h3> -->
+      <h2>Recent player entries</h2>
+      <p>There are
+        <%= players.query.length %> players.
+          <br/>
+      </p>
+      <% for (var i = players.query.length-1; i >= 0; i--) {   
+        player = players.query[i];   %>
+        <div class="panel panel-default">
+          <div class="panel-heading"></div>
+          <div class="text-muted pull-right"></div>
+          <div class="panel-body">
+            <br/> ID:
+            <%=  player._id %>
+              
+                <br/>name:
+                <%=player.name%>
+                  <br/> email:
+                  <%=player.email%>
+                  <br/> phone:
+                  <%=player.phone%>
+                    <br/>
+                       
+                        <br/>
+                        <br/>
+                        <a href="/player/delete/<%= player._id  %>" class="btn btn-danger"> Delete </a>
+                        <a href="/player/details/<%= player._id %>" class="btn btn-info"> Details </a>
+                        <a href="/player/edit/<%= player._id %>" class="btn btn-warning"> Edit </a>
+        </div>
+      </div>
+        <% } %>
+
+    </div>
+  </div>
+</div>
+  </div>

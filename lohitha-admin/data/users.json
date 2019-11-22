@@ -1,0 +1,45 @@
+
+[
+    {
+        "_id": 1,
+    
+        "name": "lohitha",
+        "email": "lohithabhethalam@gmail.com",
+        "phone": 123456789
+        
+      
+    },
+    {
+        "_id": 2,
+        
+        "name": "bhethalam",
+        "email": "lohithavarma03@gmail.com",
+        "phone": 123456789
+        
+    },
+    {
+        "_id": 3,
+        
+        "name": "bapiraju",
+        "email": "bapiraju@lohithalifesciences.com",
+        "phone": 123456789
+     
+    },
+    {
+        "_id": 4,
+        
+        "name": "jyostna",
+        "email": "jyostnavegiraju@gmail.com",
+        "phone": 123456789
+        
+    },
+    {
+        "_id": 5,
+        
+        "name": "subu",
+        "email": "S533975@nwmissouri.edu",
+        "phone": 123456789
+       
+    }
+
+]

@@ -1,0 +1,50 @@
+<br>
+<h1>Event</h1>
+<div style="height:1200px;width:400px;border:1px solid #ccc;overflow:auto;">
+  <br/>
+
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <a href="event/create" class="btn btn-primary new">Add Event</a>
+      <h2>Recent event entries</h2>
+      <p>There are
+        <%= events.query.length %> events.
+          <br/>
+      </p>
+      <% for (var i = events.query.length-1; i >= 0; i--) {   
+        event = events.query[i];   %>
+        <div class="panel panel-default">
+          <div class="panel-heading"></div>
+          <div class="text-muted pull-right"></div>
+          <div class="panel-body">
+            <br/> ID:
+            <%=  event._id %>
+              
+                <br/>name:
+                <%=event.name%>
+                  <br/> email:
+                  <%=event.email%>
+                  <br/> phone:
+                  <%=event.phone%>
+                  <br/> state:
+                  <%=event.state%>
+                  <br/> stadium:
+                  <%=event.stadium%>
+                  <br/> date 
+                  <%=event.date%>
+                    <br/>
+                       
+                        <br/>
+                        <br/>
+                        <a href="/event/delete/<%= event._id  %>" class="btn btn-danger"> Delete </a>
+                        <a href="/event/details/<%= event._id %>" class="btn btn-info"> Details </a>
+                        <a href="/event/edit/<%= event._id %>" class="btn btn-warning"> Edit </a>
+        </div>
+      </div>
+        <% } %>
+
+    </div>
+  </div>
+</div>
+  </div>
