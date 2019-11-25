@@ -45,6 +45,10 @@ const routes = require('./routes/index.js');
 app.use('/', routes);
 LOG.info('Routing set at /routes/index.js');
 
+const login = require('./routes/index.js');
+app.use('/login', login);
+LOG.info('Routing set at /routes/index.js');
+
 // ----------------------------------------
 
 
