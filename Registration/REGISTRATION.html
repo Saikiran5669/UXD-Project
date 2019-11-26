@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+        <link rel="javascript" type="text/js" href="registration.js">
+        <link rel="stylesheet" type="text/css" href="registration.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="#giftcard">Gift card</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+            <li><a href="../about us/aboutus.html">About</a></li>
+            <li><a class="active" href="REGISTRATION.html">Register/Login</a></li>
+    </ul>
+ <div class="aa">
+ <h2>REGISTRATION</h2>
+  <form action="../Login/LOGIN.html" method="POST">
+  <h2 style="font-size:1vw;"> NAME</h2>
+   <input type="text" name="username" placeholder="Name" title="Enter username "required/><br><br>
+  <h2 style="font-size:1vw;">E-mail</h2>
+   <input type="email" name="email" placeholder="E-mail" title="Enter correct Email ID" required/><br><br>
+  <h2 style="font-size:1vw;">Contact Number</h2>
+   <input type="text" name="Contact Number" placeholder="Contact Number" pattern="^([0-9]( |-)?)?(\(?[0-9]{3}\)?|[0-9]{3})( |-)?([0-9]{3}( |-)?[0-9]{4}|[a-zA-Z0-9]{7})$"
+   title="incorrect number" required/><br><br>
+  <h2 style="font-size:1vw;">Enter Password</h2>
+   <input type="password" placeholder="Enter Your password" id="psw1" name="psw1" 
+   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and 
+   one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>
+  <h2 style="font-size:1vw;">Re-Enter Password</h2>
+   <input type="password" placeholder="Re-Enter Your password" id="psw2" name="psw2"required><br><br>
+   <button value="playerregisteration"style="height: 8%;width: 18%;"><b>Register as Player</b></button>
+   <button value="userregisteration"style="height: 8%;width: 18%;"  ><b>Register as User</b></button>
+   <button  type="reset" value="cancel"style="height: 8%;width: 28%;"><b>Cancel</b></button>
+   
+  </form><!-- close form -->
+ </div><!-- close aa -->
+ <footer style="background-color:#2b4170;margin-top:15%;">
+    <p style="padding: 1%; text-align: center;"> © Team Pirates</p>
+</footer>
+</footer>
+</body>
+</html>
