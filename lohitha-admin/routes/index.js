@@ -20,7 +20,7 @@ router.get('/', (req, res, next) => {
 })
 router.get('/login', (req, res, next) => {
   //LOG.debug('Request to /')
-  res.render('/login', { title: 'Express App' })
+  res.render('adminlogin.ejs', { title: 'Express App' })
 })
 
 // Defer path requests to a particular controller
