@@ -13,7 +13,7 @@
         <style>
 
             #textbox{
-                text-align: left;
+                text-align: center;
                 
             }
             input[type=text], select {
@@ -60,52 +60,25 @@ div {
         
     </head>
     <ul>
-            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../userEvent/event.html">Home</a></li>
             <li><a href="#giftcard">Gift card</a></li>
             <li><a href="../contact/contact.html">Contact</a></li>
             <li><a href="../about us/aboutus.html">About</a></li>
-            <li><a class="active" href="REGISTRATION.html">Register/Login</a></li>
+            <li><a href="../home/home.html">Sign Out</a></li>
     </ul>
     <body style="background-color:#f1f1f1;">
         <!-- <div style="height:30px; width:30px;"><img src="../images/stadium.jpg" ;align="left"></div> -->
         &nbsp;
-        <img src="../images/stadium.jpg" alt="Lights" style="float:right">
-        <div id="textbox"> <h2>Enter your details:</h2>
-                <br>
-                
-                <form action="../PlayerEvent/event.html" method="POST">
-                    <label for="fname">Name</label>
-                    <br>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name">
-                <br>
-
-                    <label for="lname">E-mail</label>
-                    <br>
-
-                    <input type="text" id="lname" name="email" placeholder="Your e-mail">
-                    <br>
-                    <label for="lname">Contact Number</label>
-                    <br>
-                    <input type="text" id="lname" name="number" placeholder="Seat Numbers">
-                    <br>
-                    <label for="lname">Select the seat numbers that you want to reserve</label>
-                    <br>
-                    <input type="text" id="lname" name="number" placeholder="Your contact number">
-                    <br>
-                    <label for="country">Enter number of seats you want to reserve</label>
-                    <select id="country" name="country">
-                      <option value="australia">---</option>
-                      <option value="canada">1</option>
-                      <option value="usa">2</option>
-                    </select>
-                  <br>
-                  
-                  
-<input type="submit" value="Submit">
-<input onclick="cancel()" type="button" id="cancelbttn" value="Cancel">
-                  </form>
-
+        <!-- <img src="../images/stadium.jpg" alt="Lights" style="float:right"> -->
+        <div id="textbox"> <h2>Booking Confirmed</h2>
+             <img src="./confi.png" width="3%">   
+             <p>California Kings vs Agua Caliente Clippers</p>
+             <p>Date: 12/27/2019</p>
+             <p>Venue: NYC Stadium </p>
+             <p>Place: Albany, NY </p>
+             <button value="Event Search" type="submit" onclick="window.location.href='../userEvent/event.html'"><b>Continue to site</b></button>
         </div>
+
         
     </body>
  
@@ -115,7 +88,7 @@ div {
 </footer>
 <script>
     function cancel(){
-        window.location.href = "../PlayerEvent/event.html"
+        window.location.href = "../userEvent/event.html"
     }
 </script>
 </body>
