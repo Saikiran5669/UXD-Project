@@ -20,18 +20,19 @@
     <body>
         <div class="aa">
             <h2>CONTACT US</h2>
-                <form>
-                    <h2 style="font-size:1vw;"> NAME</h2>
-                    <input type="text" name="username" placeholder="Name"/><br><br>
-                    <h2 style="font-size:1vw;">E-mail</h2>
-                    <input type="text" name="email" placeholder="E-mail"/><br><br>
+                <form action="conformation.html" method="POST">
+                    <h2 style="font-size:1vw;"> NAME*</h2>
+                    <input type="text" name="username" placeholder="Name" required/><br><br>
+                    <h2 style="font-size:1vw;">E-mail*</h2>
+                    <aside class="item pull-right"><p>* Incidates the fields are mandatory </p></aside>
+                    <input type="email" name="email" placeholder="E-mail" required/><br><br>
                     <h2 style="font-size:1vw;">Contact Number</h2>
                     <input type="text" name="Contact Number" placeholder="Contact Number"/><br><br>
-                    <h2 style="font-size:1vw;">Enter Your Message Below</h2>
-                    <input type="text1" name="Message" placeholder="Message"/><br><br>
+                    <h2 style="font-size:1vw;">Enter Your Message Below*</h2>
+                    <input type="text1" name="Message" placeholder="Message" required/><br><br>
                      
-                    <button value="contact"style="height: 8%;width: 18%;"><b>Contact</b></button>
-                    <button value="cancel"style="height: 8%;width: 18%;"><b>Cancel</b></button>
+                    <button value="contact" onclick="myfuction()" style="height: 8%;width: 18%; background-color: black;color: white;"><b>Contact</b></button>
+                    <button value="cancel"style="height: 8%;width: 18%; background-color: black;color: white;"><b>Cancel</b></button>
                       
                 </form><!-- close form -->
         </div><!-- close aa -->
@@ -39,5 +40,10 @@
         <footer style="background-color:#2b4170;margin-top:7%;">
             <p style="padding: 1%; text-align: center;"> © Team Pirates</p>
         </footer>
+    <script>
+        function myFunction(){
+           window.location.href="../Login/LOGIN.html"
+        }
+        </script>
     </body>
 </html>

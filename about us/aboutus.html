@@ -1,14 +1,8 @@
 <!DOCTYPE html>
-<html>
-        
-                
-                
-                
+<html>                
 <head>
         <meta charset="utf-8">
-        <title>Homepage</title>
-        
-      
+        <title>About us</title> 
         <link rel="stylesheet" type="text/css" href="../home/home.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -22,7 +16,7 @@ html {
 
 .column {
   float: left;
-  width: 33.3%;
+  width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -70,12 +64,14 @@ html {
 </style>
 </head>
 
-<ul>
+<ul style="margin-left: -0.5%;
+    margin-right: -2.5%;
+    margin-top: -0.7%";>
         <li><a href="../home/home.html">Home</a></li>
         <li><a href="#giftcard">Gift card</a></li>
         <li><a href="../contact/contact.html">Contact</a></li>
         <li><a href="../about us/aboutus.html">About</a></li>
-        <li><a class="active" href="REGISTRATION.html">Register/Login</a></li>
+        <li><a class="active" href="../Login/LOGIN.html">Register/Login</a></li>
 </ul>
 <body>
 
@@ -86,44 +82,61 @@ html {
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="../images/saikiran.jpeg" alt="Jane" style="width:100%">
+      <img src="../images/saikiran.jpeg" alt="Jane" style="width: 100%;height: fit-content;">
       <div class="container">
         <h2>Sai kiran Reddy Baki</h2>
         <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <p>I'm the CEO&Founder of pirates group ltd.</p>
+        <p>saikiran@pirates.com</p>
+        <p><button class="button" onclick="myFunction()">Contact</button></p>
       </div>
     </div>
   </div>
 
   <div class="column">
     <div class="card">
-      <img src="../images/lohitha.jpeg" alt="Mike" style="width:100%">
+      <img src="../images/fahreen.jpeg" alt="Mike" style="width: 100%;height: 21em;">
       <div class="container">
-        <h2>Lohitha Bhethalam</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <h2>Fahreen Mohammed</h2>
+        <p class="title">Ux Designer</p>
+        <p>I'm the Ux Designer of pirates group ltd.</p>
+        <p>fahreen@pirates.com</p>
+        <p><button class="button" onclick="myFunction()">Contact</button></p>
       </div>
     </div>
   </div>
   <div class="column">
     <div class="card">
-      <img src="../images/anvesh.png" alt="John" style="width:100%">
+      <img src="../images/lohitha.jpeg" alt="Mike" style="width: 100%;height: fit-content;">
       <div class="container">
-        <h2>Anvesh </h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <h2>Lohitha Bhethalam</h2>
+        <p class="title">Project Manager</p>
+        <p>I'm the Project Managerof pirates group ltd.</p>
+        <p>lohitha@pirates.com</p>
+        <p><button class="button" onclick="myFunction()">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="../images/anvesh.png" alt="John" style="width: 100%;height:fit-content">
+      <div class="container">
+        <h2>Anvesh Rao</h2>
+        <p class="title">UX Designer</p>
+        <p>I'm the Ux Designer of pirates group ltd.</p>
+        <p>anvesh@pirates.com</p>
+        <p><button class="button" onclick="myFunction()">Contact</button></p>
       </div>
     </div>
   </div>
   </div>
-  <footer style="background-color:#2b4170;margin-top:15%;clear: both;">
+  <footer style="background-color:#2b4170;margin-top: 10%;margin-left: -0.5%;margin-right: -0.5%;clear: both;">
         <p style="padding: 1%; color: white; text-align: center;"> © Team Pirates</p>
     </footer>
+    <script>
+      function myFunction(){
+          window.location.href = "../contact/contact.html";
+      }
+  </script>
 </body>
 </html>
