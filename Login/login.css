@@ -30,7 +30,7 @@ li {
    }
    .aa input[type="text"]{
     border-radius: 15px;
-    background-color: rgb(180,180,180);
+    background-color: white;
     padding: 20px; 
     width: 400px;
     height: 5px; 
@@ -38,7 +38,7 @@ li {
    }
    .aa input[type="password"]{
     border-radius: 15px;
-    background-color: rgb(180,180,180);
+    background-color: white;
     padding: 20px; 
     width: 400px;
     height: 5px; 
