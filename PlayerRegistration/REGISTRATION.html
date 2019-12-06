@@ -1,0 +1,122 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+        <link rel="javascript" type="text/js" href="registration.js">
+        <link rel="stylesheet" type="text/css" href="../home/home.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <style>
+
+            #textbox{
+                text-align: left;
+                
+            }
+            input[type=text], select {
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  
+    background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+#cancelbttn{
+    background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+            
+        </style>
+        
+    </head>
+    <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="#giftcard">Gift card</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+            <li><a href="../about us/aboutus.html">About</a></li>
+            <li><a class="active" href="REGISTRATION.html">Register/Login</a></li>
+    </ul>
+    <body style="background-color:#f1f1f1;">
+        <!-- <div style="height:30px; width:30px;"><img src="../images/stadium.jpg" ;align="left"></div> -->
+        &nbsp;
+        <img src="../images/stadium.jpg" alt="Lights" style="float:right">
+        <div id="textbox"> <h2>Enter your details:</h2>
+                <br>
+                
+                <form action="../PlayerEvent/event.html" method="POST">
+                    <label for="fname">Name</label>
+                    <br>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name">
+                <br>
+
+                    <label for="lname">E-mail</label>
+                    <br>
+
+                    <input type="text" id="lname" name="email" placeholder="Your e-mail">
+                    <br>
+                    <label for="lname">Contact Number</label>
+                    <br>
+                    <input type="text" id="lname" name="number" placeholder="Seat Numbers">
+                    <br>
+                    <label for="lname">Select the seat numbers that you want to reserve</label>
+                    <br>
+                    <input type="text" id="lname" name="number" placeholder="Your contact number">
+                    <br>
+                    <label for="country">Enter number of seats you want to reserve</label>
+                    <select id="country" name="country">
+                      <option value="australia">---</option>
+                      <option value="canada">1</option>
+                      <option value="usa">2</option>
+                    </select>
+                  <br>
+                  
+                  
+<input type="submit" value="Submit">
+<input onclick="cancel()" type="button" id="cancelbttn" value="Cancel">
+                  </form>
+
+        </div>
+        
+    </body>
+ 
+ <footer style="background-color:#2b4170;margin-top:15%;clear: both;">
+    <p style="padding: 1%; color: white; text-align: center;"> © Team Pirates</p>
+</footer>
+</footer>
+<script>
+    function cancel(){
+        window.location.href = "../PlayerEvent/event.html"
+    }
+</script>
+</body>
+</html>

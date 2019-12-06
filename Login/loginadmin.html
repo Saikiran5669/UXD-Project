@@ -25,11 +25,16 @@
               <input type="text" placeholder="Username"/><br><br>
              <h2 style="font-size:1vw;">Enter Password</h2>
               <input type="password" placeholder="Enter Your password"/><br><br>
-              <button value="playerlogin"style="height: 8%;width: 18%;"><b>Login</b></button>
+              <button value="adminlogin" onclick=navigate() style="height: 8%;width: 18%;"><b>Login</b></button>
              </form><!-- close form -->
         </div><!-- close aa -->
         <footer style="background-color:#2b4170; margin-top:5%;padding: 1%">
             <p style="text-align: center;"> © Team Pirates</p>
         </footer>
+        <script>
+            function navigate(){
+                window.location.href = "http://localhost:8089";
+            }
+        </script>
     </body>
 </html>
