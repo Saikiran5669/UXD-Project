@@ -12,7 +12,7 @@
     </head>
     <ul>
             <li><a  href="../home/home.html">Home</a></li>
-            <li><a href="#giftcard">Gift card</a></li>
+            <li><a href="../GiftCards/giftcard.html">Gift card</a></li>
             <li><a class="active" href="../contact/contact.html">Contact</a></li>
             <li><a href="../about us/aboutus.html">About</a></li>
             <li><a href="../Login/LOGIN.html">Register/Login</a></li>
@@ -167,7 +167,7 @@ input[type=submit]:hover {
 <br>
 <br>
         <div class="container">
-            <form action="/payment">
+            <form action="../payment/payment.html">
               <div class="row">
                 <h2 style="text-align:center">Enter Your Details</h2>
                 <div class="vl">
@@ -181,12 +181,16 @@ input[type=submit]:hover {
                     <input type="email" name="username" placeholder="E-mail" required>
                     <label for="fname">Contact Number</label>
                     <input type="number" name="username" placeholder="Number" required>
+
                     <label for="country">Select state where you want to organize event</label>
                    
                     <select id="country" name="country">
-                      <option value="australia">State</option>
-                      <option value="canada">Canada</option>
-                      <option value="usa">USA</option>
+
+                      <option value="state">State</option>
+                      <option value="Alabama">Alabama</option>
+                      <option value="Arkansas">Arkansas</option>
+                      <option value="Colorado">Colorado</option>
+                      <option value="Delaware">Delaware</option>
                     </select>
                     
                 </div>
@@ -199,9 +203,10 @@ input[type=submit]:hover {
                   <label for="country">Select stadium in your city</label>
                    
                   <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
+                      <option value="australia">Stadium</option>
+                    <option value="australia">Bob Ford Field At Tom & Mary Casey Stadium</option>
+                    <option value="canada">Bleecker Stadium</option>
+                    <option value="usa">SEFCU Arena</option>
                   </select>
                   <label for="country">When do you want to book stadium</label>
                   <input type="date" />
