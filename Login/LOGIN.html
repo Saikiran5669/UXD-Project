@@ -10,27 +10,132 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <style>
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ccc;
+}
+
+* {
+  box-sizing: border-box;
+}
+.bottom-container {
+  text-align: center;
+  background-color:white;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+        </style>
     </head>
     <ul>
             <li><a href="../home/home.html">Home</a></li>
-            <li><a href="#giftcard">Gift card</a></li>
+            <li><a href="../GiftCards/giftcard.html">Gift card</a></li>
             <li><a href="../contact/contact.html">Contact</a></li>
             <li><a href="../about us/aboutus.html">About</a></li>
             <li><a class="active" href="LOGIN.html">Register/Login</a></li>
     </ul>
     <body>
-        <div class="aa">
-            <h2>LOGIN</h2>
-             <form action="../Registration/REGISTRATION.html" method="POST">
-             <h2 style="font-size:1vw;"> User name</h2>
-              <input type="text" placeholder="Username" id="username"/><br><br>
-             <h2 style="font-size:1vw;">Enter Password</h2>
-              <input type="password" id="password" placeholder="Enter Your password"/><br><br>
-              <button value="playerlogin"style="height: 8%;width: 18%;" onclick="formvalidateplayer()"><b>Login as Player</b></button>
-              <button value="userlogin"style="height: 8%;width: 18%;" onclick="formvalidate()"><b>Login as User</b></button><br><br>
-              <button value="register"style="height: 8%;width: 28%;" type="submit"><b>Don't have an account</b></button>
-             </form><!-- close form -->
-        </div><!-- close aa -->
+        <form action="/action_page.php">
+  <div class="container">
+    <h1>Login</h1>
+    
+    <hr>
+    <div class="imgcontainer">
+            <img src="../images/login.png" alt="Avatar" class="avatar">
+          </div>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    
+    <hr>
+    <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <div class="bottom-container" style="color:white;">
+                <div class="row">
+                  <div class="col">
+                    <a href="../PlayerEvent/event.html" style="color:white; background-color: #45a049" class="btn">Login as Player</a>
+                  </div>
+                
+                  <div class="col">
+                    <a href="../Login/LOGIN.html" style="color:white; background-color: #45a049" class="btn">Login as User</a>
+                  </div>
+                </div>
+              </div>
+  </div>
+  
+  <div class="container signin">
+        <span class="psw">Forgot <a href="../contact/contact.html">password?</a></span>
+    <p>Dont have an account? <a href="#">Sign up</a>.</p>
+  </div>
+</form>
         <footer style="background-color:#2b4170; margin-top:5%;padding: 1%">
             <p style="text-align: center;"> © Team Pirates</p>
         </footer>

@@ -1,4 +1,4 @@
-<html lang="en">
+<!-- <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Register</title>
@@ -40,10 +40,220 @@
    <button  type="reset" value="cancel"style="height: 8%;width: 28%;"><b>Cancel</b></button>
    
   </form><!-- close form -->
- </div><!-- close aa -->
- <footer style="background-color:#2b4170;margin-top:15%;">
+ <!-- </div><!-- close aa -->
+ <!-- <footer style="background-color:#2b4170;margin-top:15%;">
     <p style="padding: 1%; text-align: center;"> © Team Pirates</p>
 </footer>
 </footer>
 </body>
+</html> --> 
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact us</title>
+        <link rel="stylesheet" type="text/css" href="../home/home.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <style>
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+} 
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+    position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  top:80px;
+  height: 275px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color:white;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+            </style>
+    </head>
+    <ul>
+            <li><a  href="../home/home.html">Home</a></li>
+            <li><a href="#giftcard">Gift card</a></li>
+            <li><a class="active" href="../contact/contact.html">Contact</a></li>
+            <li><a href="../about us/aboutus.html">About</a></li>
+            <li><a href="../Login/LOGIN.html">Register/Login</a></li>
+    </ul>
+    
+    <body>
+        <br>
+        <br>
+            <div class="container">
+                    <form action="/action_page.php">
+                      <div class="row">
+                        <h2 style="text-align:center">Registration</h2>
+                        <div class="vl">
+                          
+                        </div>
+                  
+                        <div class="col">
+                                <label for="fname">Name</label>
+                                <input type="text" name="username" placeholder="Name" required>
+                                <label for="fname">E-mail</label>
+                                <input type="email" name="username" placeholder="E-mail" required>
+                                <label for="fname">Contact Number</label>
+                                <input type="number" name="username" placeholder="Number" required>
+                                
+                        </div>
+                  
+                        <div class="col">
+                          <div class="hide-md-lg">
+                            <p>Or sign in manually:</p>
+                          </div>
+                  
+                          <label for="fname">Password</label>
+                                <input type="password" name="username" placeholder="enter password" required>
+                                <label for="fname">Re-enter Password</label>
+                                <input type="password" name="username" placeholder="enter password" required>
+                         
+                        </div>
+                        
+                      </div>
+                    </form>
+                  </div>
+                  <br>
+                  
+                  <div class="bottom-container" style="color:white;">
+                    <div class="row">
+                      <div class="col">
+                        <a href="../Login/LOGIN.html" style="color:white; background-color: #45a049" class="btn">Register as Player</a>
+                      </div>
+                    
+                      <div class="col">
+                        <a href="../Login/LOGIN.html" style="color:white; background-color: #45a049" class="btn">Register as User</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+    <footer style=" position: absolute;
+        bottom: 0;
+        width: 100%;background-color:#2b4170;margin-top:3%;padding: 1%;clear: both;">
+      
+          <p style="color: white; text-align: center"> © Team Pirates</p>
+        </footer>
+        </body>
 </html>
+

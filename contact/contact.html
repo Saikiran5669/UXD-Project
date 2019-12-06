@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <title>Contact us</title>
-        <link rel="stylesheet" type="text/css" href="contact.css">
+        <link rel="stylesheet" type="text/css" href="../home/home.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,28 +17,69 @@
             <li><a href="../about us/aboutus.html">About</a></li>
             <li><a href="../Login/LOGIN.html">Register/Login</a></li>
     </ul>
-    <body>
-        <div class="aa">
-            <h2>CONTACT US</h2>
-                <form action="conformation.html" method="POST">
-                    <h2 style="font-size:1vw;"> NAME*</h2>
-                    <input type="text" name="username" placeholder="Name" required/><br><br>
-                    <h2 style="font-size:1vw;">E-mail*</h2>
-                    <aside class="item pull-right"><p>* Incidates the fields are mandatory </p></aside>
-                    <input type="email" name="email" placeholder="E-mail" required/><br><br>
-                    <h2 style="font-size:1vw;">Contact Number</h2>
-                    <input type="text" name="Contact Number" placeholder="Contact Number"/><br><br>
-                    <h2 style="font-size:1vw;">Enter Your Message Below*</h2>
-                    <input type="text1" name="Message" placeholder="Message" required/><br><br>
-                     
-                    <button value="contact" onclick="myfuction()" style="height: 8%;width: 18%;"><b>Contact</b></button>
-                    <button value="cancel"style="height: 8%;width: 18%;"><b>Cancel</b></button>
-                      
-                </form><!-- close form -->
-        </div><!-- close aa -->
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
-        <footer style="background-color:#2b4170;margin-top:7%;">
-            <p style="padding: 1%; text-align: center;"> © Team Pirates</p>
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
+    <body>
+           
+            <div class="container">
+              <form action="conformation.html" method="POST">
+                <h3>Contact Form</h3>
+
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">E-mail</label>
+                
+                <input type="text" id="lname" name="lastname" placeholder="Your email">
+            
+               
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+                <br>
+                <br>
+              </form>
+            </div>
+
+        <footer style=" position: absolute;
+        bottom: 0;
+        width: 100%;background-color:#2b4170;margin-top:3%;padding: 1%;clear: both;">
+      
+          <p style="color: white; text-align: center"> © Team Pirates</p>
         </footer>
     <script>
         function myFunction(){
